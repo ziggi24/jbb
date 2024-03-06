@@ -57,7 +57,7 @@ Holistic yoga practice
 
 Group Size | Pricing
 ------------- | -------------
-Group Yoga  | $50-90/hour
+Mixed Group Yoga  | $50-90/hour
 Private Yoga (adult)  | $110-150/hour
 Private Yoga (child) | $60-100/45 minutes
 Group Private (adult & child) | $120-160/50 minutes			
