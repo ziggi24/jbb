@@ -10,8 +10,8 @@ menus = ['main', 'footer']
 At __Your Life Learning__, we are committed to supporting individuals from all walks of life on their learning journeys. 
 
 Two truths lay the groundwork of our services: 
-1. __You learn something new every day__ 
-2. __We all learn in our own unique way__
+>1. __You learn something new every day__ 
+>1. __We all learn in our own unique way__
 
 With a love for learning and a knack for meeting you right where you are, we are here to understand you and your strengths, and to help you grow from there, whether in your 
 
