@@ -1,0 +1,91 @@
+
+.container {
+    border: 1px solid grey;
+    margin: 1rem;
+}
+
+[data-tab-info] {
+    display: none;
+}
+
+.active[data-tab-info] {
+    display: block;
+}
+
+.tab-content {
+    margin-top: 1rem;
+    padding-left: 1rem;
+    font-size: 18px;
+}
+.tab-content p {
+    font-weight: 400;
+}
+
+.tabs-main {
+    border-bottom: 1px solid grey;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 2%;
+    width: 100%;
+}
+@media screen and (max-width: 500px){
+    .tabs-main {
+        /* display: block; */
+        font-size: 14px;
+        padding: 0;
+        padding-bottom: 3%;
+        margin-top: 5%;
+    }
+    .tabs-main span {
+        padding: 5px;
+    }
+    
+}
+@media screen and (max-width: 400px){
+    .tabs-main {
+        /* display: block; */
+        font-size: 10px;
+        padding: 0;
+        padding-bottom: 3%;
+        margin-top: 5%;
+    }
+    .tabs-main span {
+        padding: 3px;
+    }
+    
+}
+@media screen and (max-width: 315px){
+    .tabs-main {
+        /* display: block; */
+        font-size: 8px;
+        padding: 0;
+        padding-bottom: 3%;
+        margin-top: 5%;
+    }
+    .tabs-main span {
+        padding: 3px;
+    }
+    
+}
+.tabs-main span.active {
+    background: lightgrey;
+    color: black;
+    cursor: pointer;
+}
+
+.tabs-main span {
+    background: rgb(140, 130, 130);
+    padding: 10px;
+    /* border: 1px solid rgb(255, 255, 255); */
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.tab-main span:hover {
+    background: lightgrey;
+    cursor: pointer;
+    color: black;
+}
