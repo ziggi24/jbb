@@ -22,21 +22,60 @@
 }
 
 .tabs-main {
-    border-bottom: 1px solid grey;
+    border-bottom: 2px solid rgb(84, 81, 81);
     font-size: 18px;
     display: flex;
     justify-content: space-between;
     margin: 0;
-    padding: 2%;
+    /* padding: 2%; */
     width: 100%;
+}
+
+.tabs-main span.active {
+    background: lightgrey;
+    color: #1f1f1f;
+    cursor: pointer;
+}
+
+.tabs-main span {
+    background: rgb(84, 81, 81);
+    color: #f1f1f1;
+    padding: 10px;
+    /* border: 1px solid rgb(255, 255, 255); */
+    border-radius: 4px 4px 0 0;
+    cursor: pointer;
+}
+
+
+.tab-main span:hover {
+    background: lightgrey;
+    cursor: pointer;
+    color: black;
+}
+@media screen and (max-width: 680px){
+    .tabs-main {
+        /* display: block; */
+        font-size: 16px;
+        padding: 0;
+        /* padding-bottom: 3%; */
+        /* margin-top: 5%; */
+        max-width: 94%;
+        margin-left: 3%;
+        margin-right: 3%;
+
+    }
+    .tabs-main span {
+        padding: 8px;
+    }
+    
 }
 @media screen and (max-width: 500px){
     .tabs-main {
         /* display: block; */
         font-size: 14px;
         padding: 0;
-        padding-bottom: 3%;
-        margin-top: 5%;
+        /* padding-bottom: 3%; */
+        /* margin-top: 5%; */
     }
     .tabs-main span {
         padding: 5px;
@@ -46,9 +85,9 @@
 @media screen and (max-width: 400px){
     .tabs-main {
         /* display: block; */
-        font-size: 10px;
+        font-size: 13px;
         padding: 0;
-        padding-bottom: 3%;
+        /* padding-bottom: 3%; */
         margin-top: 5%;
     }
     .tabs-main span {
@@ -59,33 +98,13 @@
 @media screen and (max-width: 315px){
     .tabs-main {
         /* display: block; */
-        font-size: 8px;
+        font-size: 11px;
         padding: 0;
-        padding-bottom: 3%;
+        /* padding-bottom: 3%; */
         margin-top: 5%;
     }
     .tabs-main span {
         padding: 3px;
     }
     
-}
-.tabs-main span.active {
-    background: lightgrey;
-    color: black;
-    cursor: pointer;
-}
-
-.tabs-main span {
-    background: rgb(140, 130, 130);
-    padding: 10px;
-    /* border: 1px solid rgb(255, 255, 255); */
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-
-.tab-main span:hover {
-    background: lightgrey;
-    cursor: pointer;
-    color: black;
 }
