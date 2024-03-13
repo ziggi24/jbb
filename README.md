@@ -15,15 +15,26 @@ To render site out to a static page in the `/public` folder use command `hugo`
 ## ToDo 
 - build pages: 
     - Home page 
+        - ~~basic layout~~
+        - update layout
+        - actual hero image/section
     - About page 
+        - ~~basic layout~~
+        - update layou
     - Services page
+        - ~~basic layout~~
+        - ~~tab shortcodes~~
+        - update layout and formatting
 - update designs: 
     - font choice from j 
     - updated pictures from j 
     - logo? 
     - accent colors?
 - deploy:
+    - ~~setup github pages~~
     - map url to github pages 
+
+
 
 ## Resources 
 - [Hugo Docs](https://gohugo.io/documentation/)
