@@ -10,7 +10,7 @@ J Bernick (they/them) is a teacher, tutor, consultant, and coach serving student
 
 They studied philosophy and psychology at The George Washington University, and are pursuing a Master’s in Social Work, focusing on Infant and Early Childhood Mental Health, at the Erikson Institute. They completed their 200-hour yoga teacher training with Mimi Rieger, and their Restorative Yoga training with Bernie Wandel.
 
-J grew up in south Florida and was born in Toronto, Canada. They are a white queer, nonbinary, neurodivergent, Jewish human who loves to be by the water and in the sunshine. They live on Piscataway and Nacotchtank land with their partner and their kitties, Luna and Pluto. 
+J grew up in south Florida and was born in Toronto, Canada. They are a white queer, nonbinary, neurodivergent, Jewish human who loves to be by the water and in the sunshine. They grew up in south Florida and were born in Toronto, Canada. They live and work on Piscataway and Nacotchtank land with their partner and their kitties, Luna and Pluto. 
 
 __J Bernick (they/them)__  
 __Email:__ [jbbyogi@gmail.com](mailto:jbbyogi@gmail.com?subject=Website%20Contact)  
