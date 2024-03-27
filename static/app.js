@@ -28,6 +28,7 @@ if(queryString) {
     console.log(activeTab);
     if(activeTab != "tab_1" && activeTab != "tab_2" && activeTab != "tab_3" && activeTab != "tab_4") {
         const target = document.querySelector("#tab_1");
+        const tab = document.querySelector("[data-tab-value='#tab_1']");
         console.log(target);
         tabInfos.forEach(tabInfo => {
             tabInfo.classList.remove('active')
@@ -35,10 +36,12 @@ if(queryString) {
         tabs.forEach(tab => {
             tab.classList.remove('active')
         })
+        tab.classList.add('active');
         target.classList.add('active');
     }
     else {
         const target = document.querySelector("#"+activeTab);
+        const tab = document.querySelector("[data-tab-value='#"+activeTab+"']");
         console.log(target);
         tabInfos.forEach(tabInfo => {
             tabInfo.classList.remove('active')
@@ -46,6 +49,7 @@ if(queryString) {
         tabs.forEach(tab => {
             tab.classList.remove('active')
         })
+        tab.classList.add('active');
         target.classList.add('active');
     }
     

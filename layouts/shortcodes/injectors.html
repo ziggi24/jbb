@@ -11,16 +11,15 @@
     servicesDropdown.setAttribute('title', 'Services');
     servicesDropdown.setAttribute('id', 'services');
     servicesDropdown.setAttribute('name', 'services');
+    servicesDropdown.setAttribute('onchange', "location = this.options[this.selectedIndex].value;");
 
     document.querySelector('[title="Services"]').remove();
     servicesParent.appendChild(servicesDropdown);
 
     //create title for the dropdown menu 
-    const servicesTitle = document.createElement('option');
-    servicesTitle.setAttribute('value', 'Services');
-    servicesTitle.setAttribute('hidden', 'hidden');
-    servicesTitle.textContent = 'Services';
-    servicesDropdown.appendChild(servicesTitle);
+    const params = window.location.search;
+    console.log("params:")
+    console.log(params);
 
     //create options for the dropdown
     const servicesOptions = ['Rates', 'Consulting', 'Tutoring', 'Yoga'];
@@ -29,18 +28,31 @@
         optionElement.setAttribute('value', option);
         optionElement.textContent = option;
         //make each option element link to the corresponding tab
-        optionElement.addEventListener('click', () => {
-            if(window.location !== window.location.origin + '/services') {
-                //link to the services page with the tab value in the url
-                document.location = window.location.origin + '/services' + `?key=tab_${index + 1}`;
-            }
-            else {
-                document.querySelector(`[data-tab-value="#tab_${index + 1}"]`).click();
-            }
-        });
+       optionElement.value = window.location.origin + "/services/" + "?key=tab_" + (index + 1);
         servicesDropdown.appendChild(optionElement);
 
     });
+
+    if(params && params.includes('tab')) {
+        const paramsKey = params.split('=')[1];
+        //find the option in the dropdown that matches the params key and make it active
+        const options = servicesDropdown.querySelectorAll('option');
+        console.log(options)
+        options.forEach(option => {
+            if(option.value.includes(paramsKey)) {
+                option.setAttribute('selected', 'selected');
+            }
+        });
+    }
+    else {
+        console.log('no params')
+        const servicesTitle = document.createElement('option');
+        servicesTitle.setAttribute('value', 'Services');
+        servicesTitle.setAttribute('hidden', 'hidden');
+        servicesTitle.textContent = 'Services';
+        servicesTitle.setAttribute('selected', 'selected');
+        servicesDropdown.appendChild(servicesTitle);    
+    }
 
 </script>
 <style>
