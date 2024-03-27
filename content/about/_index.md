@@ -12,6 +12,7 @@ They studied philosophy and psychology at The George Washington University, and 
 
 J grew up in south Florida and was born in Toronto, Canada. They are a white queer, nonbinary, neurodivergent, Jewish human who loves to be by the water and in the sunshine. They grew up in south Florida and were born in Toronto, Canada. They live and work on Piscataway and Nacotchtank land with their partner and their kitties, Luna and Pluto. 
 
-__J Bernick (they/them)__  
-__Email:__ [jbbyogi@gmail.com](mailto:jbbyogi@gmail.com?subject=Website%20Contact)  
-__Phone:__ 561-252-1802
+__CONTACT__  
+J Bernick (they/them)   
+[jbbyogi@gmail.com](mailto:jbbyogi@gmail.com?subject=Website%20Contact)  
+
