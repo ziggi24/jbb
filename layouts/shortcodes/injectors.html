@@ -1,0 +1,45 @@
+<style>
+
+</style>
+<script>
+        //find an a tag with the title value "services" and replace this a tag with a dropdown with 4 options
+    const services = document.querySelector('[title="Services"]');
+    console.log(services);
+    const servicesParent = services.parentElement;
+    console.log(servicesParent);
+    const servicesDropdown = document.createElement('select');
+    servicesDropdown.setAttribute('title', 'Services');
+    servicesDropdown.setAttribute('id', 'services');
+    servicesDropdown.setAttribute('name', 'services');
+
+    document.querySelector('[title="Services"]').remove();
+    servicesParent.appendChild(servicesDropdown);
+
+    //create title for the dropdown menu 
+    const servicesTitle = document.createElement('option');
+    servicesTitle.setAttribute('value', 'Services');
+    servicesTitle.setAttribute('hidden', 'hidden');
+    servicesTitle.textContent = 'Services';
+    servicesDropdown.appendChild(servicesTitle);
+
+    //create options for the dropdown
+    const servicesOptions = ['Rates', 'Consulting', 'Teaching', 'Yoga'];
+    servicesOptions.forEach((option, index) => {
+        const optionElement = document.createElement('option');
+        optionElement.setAttribute('value', option);
+        optionElement.textContent = option;
+        //make each option element link to the corresponding tab
+        optionElement.addEventListener('click', () => {
+            if(window.location !== window.location.origin + '/services') {
+                //link to the services page with the tab value in the url
+                document.location = window.location.origin + '/services' + `?key=tab_${index + 1}`;
+            }
+            else {
+                document.querySelector(`[data-tab-value="#tab_${index + 1}"]`).click();
+            }
+        });
+        servicesDropdown.appendChild(optionElement);
+
+    });
+
+</script>

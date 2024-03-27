@@ -5,3 +5,4 @@ menus = ['main', 'footer']
 +++
 
 {{< tabs >}}
+{{< injectors >}}
