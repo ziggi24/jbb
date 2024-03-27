@@ -23,7 +23,7 @@
     servicesDropdown.appendChild(servicesTitle);
 
     //create options for the dropdown
-    const servicesOptions = ['Rates', 'Consulting', 'Teaching', 'Yoga'];
+    const servicesOptions = ['Rates', 'Consulting', 'Tutoring', 'Yoga'];
     servicesOptions.forEach((option, index) => {
         const optionElement = document.createElement('option');
         optionElement.setAttribute('value', option);
@@ -43,3 +43,19 @@
     });
 
 </script>
+<style>
+    select {
+        background: none;
+        color: unset;
+        border: none;
+        font-size: 16px;
+        font-weight: 500;
+        margin: 0;
+        padding: 0;
+    }
+    option {
+        background: none;
+        color: #1e1e1e;
+    }
+
+</style>
